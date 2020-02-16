@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <link rel= "stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "header">
+        <h1>Event Form</h1>
+    <div class = "signup">
+        <form method = "post" id = "register" action="">
+            <fieldset>
+                
+                <label>Event Type: </label>
+                <select id="event" required >
+                    <option value="">Choose One</option>
+                    <option>Birthday</option>
+                    <option>Prom</option>
+                    <option>Wedding</option>
+                    <option>Anniversary</option>
+                    <option>Reunion</option>
+                    <option>Debut</option>
+                    <option>Seminar</option>
+                </select>
+                <br/><br/>
+                <label for="eventTitle">Event Title: </label>
+                <input type="text" name="eventAns" id="eventTitle" required ><br/><br/>
+                <label for ="ddate">Date: </label>
+                <input type = "date" name = "dday" id = "ddate" required>
+                <label for ="edate">to: </label>
+                <input type = "date" name = "eday" id = "edate" required><br/><br/>
+                <label for ="pdate">Posting Date: </label>
+                <input type = "date" name = "post" id = "pdate" required><br/><br/>
+            </fieldset>
+            <fieldset>
+                <input type="checkbox" id="regReq" name="regReq">
+                <label for = "regReq">Is Registration Required?</label><br/><br/>
+                <input type="checkbox" id="famProg" name="famProg">
+                <label for = "famProg">Is this event associated with any Family Programs?</label><br/><br/>
+                <input type="checkbox" id="regComp" name="regComp">
+                <label for = "regComp">Upon Registration Completion, Are Users to Recieve an Auto Genereated E-Mail?</label><br/><br/>
+                <input type="checkbox" id="pointContact" name="pointContact">
+                <label for = "pointContact">Is There a Point of Contact?</label><br/><br/>
+                <input type="checkbox" id="hostCom" name="hostCom">
+                <label for = "hostCom">Is There a Hosting Command Point of Contact?</label><br/><br/>
+                <button id="save" onclick="myFunction()">Save</button> 
+                <button id= "Cancel" onclick="cancelClear()">Cancel</button>
+            </fieldset>
+        </form>
+    </div>
+    </div>    
+    
+    
+</body>
+</html>
