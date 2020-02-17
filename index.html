@@ -11,8 +11,11 @@
     <div class = "header">
         <h1>Event Form</h1>
     <div class = "signup">
+        
         <form method = "post" id = "register" action="">
+            <legend id="aj">Create New Event</legend>
             <fieldset>
+               
                 
                 <label>Event Type: </label>
                 <select id="event" required >
@@ -31,7 +34,7 @@
                 <label for ="ddate">Date: </label>
                 <input type = "date" name = "dday" id = "ddate" required>
                 <label for ="edate">to: </label>
-                <input type = "date" name = "eday" id = "edate" required><br/><br/>
+                <input type = "date" name = "eday" id = "edate" onchange="errorDate()" required><br/><br/>
                 <label for ="pdate">Posting Date: </label>
                 <input type = "date" name = "post" id = "pdate" required><br/><br/>
             </fieldset>
